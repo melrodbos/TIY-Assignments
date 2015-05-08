@@ -46,12 +46,12 @@ function toNumber(word){
   expect(toNumber("zero")).to.equal(0);
   expect(toNumber("one")).to.equal(1);
   expect(toNumber("two")).to.equal(2);
-  expect(toNumer("three")).to.equal(3);
-  expect(toNumer("four")).to.equal(4);
+  expect(toNumber("three")).to.equal(3);
+  expect(toNumber("four")).to.equal(4);
   expect(toNumber("five")).to.equal(5);
   expect(toNumber("six")).to.equal(6);
-  expect(toNumer("seven")).to.equal(7);
-  expect(toNumer("eight")).to.equal(8);
+  expect(toNumber("seven")).to.equal(7);
+  expect(toNumber("eight")).to.equal(8);
   expect(toNumber("nine")).to.equal(9);
 
 
