@@ -71,14 +71,31 @@ function toNumber(word){
     return 0 + 2;
   }
 
-  if ( A === "zero", B === "three"){
+  if ( A === "zero", B === "three" ){
     return 0 + 3;
   }
 
-  if ( A === "zero", B === "four"){
+  if ( A === "zero", B === "four" ){
     return 0 + 4;
   }
 
+  if ( A === "zero", B === "five" ){
+    return 0 + 5;
+  }
+
+  if ( A === "zero", B === "six" ){
+    return 0 + 6;
+  }
+
+  if ( A === "zero", B === "seven"){
+    return 0 + 7;
+  }
+
+  if ( A === "zero", B === "eight"){
+    return 0 +8;
+  }
+
+  if ( A === )
 }
 
 expect(plus).to.exist;
