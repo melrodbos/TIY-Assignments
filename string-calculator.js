@@ -55,12 +55,7 @@ function toNumber(word){
   expect(toNumber("nine")).to.equal(9);
 
 
-
-
-
-
-
-  function toNumbers(A,B){
+  function plus(A,B){
     return toNumber(A) + toNumber(B);
 }
 
@@ -145,11 +140,11 @@ expect(plus("six", "seven")).to.equal(13);
 console.log(plus("zero", "zero"));
 
 
-
-function minus(A,B){
-if ( A - B )
-  return toNumber(A) - toNumber(B);
-}
-
-expect(minus).to.exist;
-expect(minus("one", "zero")).to.equal(1);
+//
+// function minus(A,B){
+// if ( A - B )
+//   return toNumber(A) - toNumber(B);
+// }
+//
+// expect(minus).to.exist;
+// expect(minus("one", "zero")).to.equal(1);
