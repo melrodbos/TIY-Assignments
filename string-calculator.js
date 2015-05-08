@@ -154,4 +154,4 @@ function multiply(A,B){
 }
 
 expect(multiply).to.exist;
-expect(mmultiply("one", "zero")).to.equal(0);
+expect(multiply("one", "zero")).to.equal(0);
