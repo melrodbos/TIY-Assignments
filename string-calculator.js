@@ -58,47 +58,11 @@ function toNumber(word){
 
 
 
-  function plus(A, B){
-  if ( A === "zero", B === "zero" ){
-    return 0 + 0;
-  }
 
-  if ( A === "zero", B === "one" ){
-    return 0 + 1;
-  }
 
-  if ( A === "zero", B === "two" ){
-    return 0 + 2;
-  }
-
-  if ( A === "zero", B === "three" ){
-    return 0 + 3;
-  }
-
-  if ( A === "zero", B === "four" ){
-    return 0 + 4;
-  }
-
-  if ( A === "zero", B === "five" ){
-    return 0 + 5;
-  }
-
-  if ( A === "zero", B === "six" ){
-    return 0 + 6;
-  }
-
-  if ( A === "zero", B === "seven"){
-    return 0 + 7;
-  }
-
-  if ( A === "zero", B === "eight"){
-    return 0 + 8;
-  }
-
-  if ( A === "zero", B === "nine"){
-    return 0 + 9;
-  }
-
+  function plus(A,B){
+  if ( A + B )
+    return toNumber(A) + toNumber(B);
 }
 
 expect(plus).to.exist;
@@ -112,3 +76,15 @@ expect(plus("zero", "six")).to.equal(6);
 expect(plus("zero", "seven")).to.equal(7);
 expect(plus("zero", "eight")).to.equal(8);
 expect(plus("zero", "nine")).to.equal(9);
+
+expect(plus("one", "one")).to.equal(1);
+expect(plus("one", "two")).to.equal(2);
+expect(plus("one", "three")).to.equal(3);
+expect(plus("one", "four")).to.equal(4);
+expect(plus("one", "five")).to.equal(5);
+expect(plus("one", "six")).to.equal(6);
+expect(plus("one", "seven")).to.equal(7);
+expect(plus("one", "eight")).to.equal(8);
+expect(plus("one", "nine")).to.equal(9);
+
+console.log(plus("zero", "zero"));
