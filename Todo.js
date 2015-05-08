@@ -19,8 +19,8 @@ function addTaskToList(task, list){
 }
 expect(taskList.length).to.equal[0];
 addTaskToList("Remember the milk", taskList);
-expect(TaskToList[0]).to.equal("Remember the milk");
-expect(TaskToList.length).to.equal(1);
+expect(tasklist[0]).to.equal("Remember the milk");
+expect(tasklist.length).to.equal(1);
 
 
 // expect what?
