@@ -92,10 +92,13 @@ function toNumber(word){
   }
 
   if ( A === "zero", B === "eight"){
-    return 0 +8;
+    return 0 + 8;
   }
 
-  if ( A === )
+  if ( A === "zero", B === "nine"){
+    return 0 + 9;
+  }
+
 }
 
 expect(plus).to.exist;
@@ -104,3 +107,8 @@ expect(plus("zero", "one")).to.equal(1);
 expect(plus("zero", "two")).to.equal(2);
 expect(plus("zero", "three")).to.equal(3);
 expect(plus("zero", "four")).to.equal(4);
+expect(plus("zero", "five")).to.equal(5);
+expect(plus("zero", "six")).to.equal(6);
+expect(plus("zero", "seven")).to.equal(7);
+expect(plus("zero", "eight")).to.equal(8);
+expect(plus("zero", "nine")).to.equal(9);
