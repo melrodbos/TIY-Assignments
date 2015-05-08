@@ -19,11 +19,12 @@ function addTaskToList(task, list){
 }
 expect(taskList.length).to.equal[0];
 addTaskToList("Remember the milk", taskList);
-console.log("This is TaskList[0]", taskList[0])
 expect(TaskToList[0]).to.equal("Remember the milk");
 expect(TaskToList.length).to.equal(1);
 
-expect(taskList.)
+
 // expect what?
-addTaskToList("Take out the trash", tasklist);
+expect(taskList.length).to.equal[1]
+addTaskToList("Take out the trash", tasklist[1]);
+
 // expect what now?
