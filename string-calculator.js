@@ -135,7 +135,10 @@ expect(plus("six", "four")).to.equal(10);
 expect(plus("six", "five")).to.equal(11);
 expect(plus("six", "six")).to.equal(12);
 expect(plus("six", "seven")).to.equal(13);
+expect(plus("six", "eight")).to.equal(14);
+expect(plus("six", "nine")).to.equal(14);
 
+expect(plus())
 
 console.log(plus("zero", "zero"));
 
