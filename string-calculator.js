@@ -212,7 +212,7 @@ expect(minus("two", "five")).to.equal(-3);
 expect(minus("two", "six")).to.equal(-4);
 expect(minus("two", "seven")).to.equal(-5);
 expect(minus("two", "eight")).to.equal(-6);
-expect(minus("two", "nine")).to.equal(-9);
+expect(minus("two", "nine")).to.equal(-7);
 
 
 
