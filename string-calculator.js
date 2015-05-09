@@ -155,3 +155,11 @@ function multiply(A,B){
 
 expect(multiply).to.exist;
 expect(multiply("one", "zero")).to.equal(0);
+
+
+function divide(A,B){
+  return toNumber(A) / toNumber(B);
+}
+
+expect(divide).to.exist;
+expect(divide("one", "zero")).to.equal(0);
