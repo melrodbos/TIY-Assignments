@@ -169,6 +169,6 @@ expect(plus("nine", "five")).to.equal(14);
 expect(plus("nine", "six")).to.equal(15);
 expect(plus("nine", "seven")).to.equal(16);
 expect(plus("nine", "eight")).to.equal(17);
-expect(plus("nine", "nine")).to.equal(18);
+expect(plus("nine", "nine")).to.equal(19);
 
 console.log(plus("zero", "zero"));
