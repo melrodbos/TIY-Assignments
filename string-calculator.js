@@ -281,7 +281,16 @@ expect(minus("eight", "seven")).to.equal(1);
 expect(minus("eight", "eight")).to.equal(0);
 expect(minus("eight", "nine")).to.equal(-1);
 
-
+expect(minus("nine", "zero")).to.equal(9);
+expect(minus("nine", "one")).to.equal(8);
+expect(minus("nine", "two")).to.equal(7);
+expect(minus("nine", "three")).to.equal(6);
+expect(minus("nine", "four")).to.equal(5);
+expect(minus("nine", "five")).to.equal(4);
+expect(minus("nine", "six")).to.equal(3);
+expect(minus("nine", "seven")).to.equal(2);
+expect(minus("nine", "eight")).to.equal(1);
+expect(minus("nine", "nine")).to.equal(0)
 
 console.log(minus("zero", "zero"));
 console.log(minus("zero", "one"));
