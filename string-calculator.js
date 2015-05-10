@@ -171,8 +171,9 @@ expect(plus("nine", "seven")).to.equal(16);
 expect(plus("nine", "eight")).to.equal(17);
 expect(plus("nine", "nine")).to.equal(18);
 
-console.log(plus("zero", "zero"));
-console.log(plus("zero", "one"));
+console.log(plus("one", "one"));
+console.log(plus("two", "two"));
+console.log(plus("zero", "two"));
 
 function minus(A, B) {
   return toNumber(A) - toNumber(B);
@@ -289,8 +290,9 @@ expect(minus("nine", "seven")).to.equal(2);
 expect(minus("nine", "eight")).to.equal(1);
 expect(minus("nine", "nine")).to.equal(0)
 
-console.log(minus("zero", "zero"));
-console.log(minus("zero", "one"));
+console.log(minus("zero", "nine"));
+console.log(minus("one", "one"));
+console.log(minus("two","nine" ))
 
 function multiply(A, B) {
   return toNumber(A) * toNumber(B);
@@ -313,7 +315,7 @@ expect(multiply("one", "one")).to.equal(1);
 expect(multiply("one", "two")).to.equal(2);
 expect(multiply("one", "three")).to.equal(3);
 expect(multiply("one", "four")).to.equal(4);
-expect(multiply("one", "five")).to.equal(4);
+expect(multiply("one", "five")).to.equal(5);
 expect(multiply("one", "six")).to.equal(6);
 expect(multiply("one", "seven")).to.equal(7);
 expect(multiply("one", "eight")).to.equal(8);
