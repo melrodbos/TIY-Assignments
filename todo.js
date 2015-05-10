@@ -28,3 +28,9 @@ addTaskToList("Clean the house", tasklist);
 expect(taskList[2]).to.equal("Clean the house");
 expect(taskList.length).to.equal(3);
 
+expect(taskList.length).to.equal(3);
+addTaskToList("Laundry AM", tasklist);
+expect(taskList[3]).to.equal("Clean the house");
+expect(taskList.length).to.equal(4);
+
+
