@@ -248,7 +248,7 @@ expect(minus("five", "seven")).to.equal(-2);
 expect(minus("five", "eight")).to.equal(-3);
 expect(minus("five", "nine")).to.equal(-4);
 
-expect(minus("six","zero")).to.equal(6);
+expect(minus("six", "zero")).to.equal(6);
 expect(minus("six", "one")).to.equal(5);
 expect(minus("six", "two")).to.equal(4);
 expect(minus("six", "three")).to.equal(3);
@@ -276,7 +276,7 @@ expect(minus("eight", "two")).to.equal(6);
 expect(minus("eight", "three")).to.equal(5);
 expect(minus("eight", "four")).to.equal(4);
 expect(minus("eight", "five")).to.equal(3);
-expect(minus("eight","six")).to.equal(2);
+expect(minus("eight", "six")).to.equal(2);
 expect(minus("eight", "seven")).to.equal(1);
 expect(minus("eight", "eight")).to.equal(0);
 expect(minus("eight", "nine")).to.equal(-1);
@@ -294,3 +294,23 @@ expect(minus("nine", "nine")).to.equal(0)
 
 console.log(minus("zero", "zero"));
 console.log(minus("zero", "one"));
+
+function multiply(A, B) {
+  return toNumber(A) * toNumber(B);
+}
+
+expect(multiply).to.exist;
+expect(multiply("zero", "zero")).to.equal(0);
+expect(multiply("zero", "one")).to.equal(0);
+expect(multiply("zero", "two")).to.equal(0);
+expect(multiply("zero", "three")).to.equal(0);
+expect(multiply("zero", "four")).to.equal(0);
+expect(multiply("zero", "five")).to.equal(0);
+expect(multiply("zero", "six")).to.equal(0);
+expect(multiply("zero", "seven")).to.equal(0);
+expect(multiply("zero", "eight")).to.equal(0);
+expect(multiply("zero", "nine")).to.equal(0);
+
+
+
+console.log(multiply("zero", "zero"));
