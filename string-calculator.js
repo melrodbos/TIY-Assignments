@@ -190,7 +190,6 @@ expect(minus("zero", "seven")).to.equal(-7);
 expect(minus("zero", "eight")).to.equal(-8);
 expect(minus("zero", "nine")).to.equal(-9);
 
-expect(minus).to.exist;
 expect(minus("one", "zero")).to.equal(1);
 expect(minus("one", "one")).to.equal(0);
 expect(minus("one", "two")).to.equal(-1);
@@ -202,7 +201,6 @@ expect(minus("one", "seven")).to.equal(-6);
 expect(minus("one", "eight")).to.equal(-7);
 expect(minus("one", "nine")).to.equal(-8);
 
-expect(minus).to.exist;
 expect(minus("two", "zero")).to.equal(2);
 expect(minus("two", "one")).to.equal(1);
 expect(minus("two", "two")).to.equal(0);
@@ -214,7 +212,6 @@ expect(minus("two", "seven")).to.equal(-5);
 expect(minus("two", "eight")).to.equal(-6);
 expect(minus("two", "nine")).to.equal(-7);
 
-expect(minus).to.exist;
 expect(minus("three", "zero")).to.equal(3);
 expect(minus("three", "one")).to.equal(2);
 expect(minus("three", "two")).to.equal(1);
@@ -310,6 +307,17 @@ expect(multiply("zero", "six")).to.equal(0);
 expect(multiply("zero", "seven")).to.equal(0);
 expect(multiply("zero", "eight")).to.equal(0);
 expect(multiply("zero", "nine")).to.equal(0);
+
+expect(multiply("one", "zero")).to.equal(0);
+expect(multiply("one", "one")).to.equal(1);
+expect(multiply("one", "two")).to.equal(2);
+expect(multiply("one", "three")).to.equal(3);
+expect(multiply("one", "four")).to.equal(4);
+expect(multiply("one", "five")).to.equal(4);
+expect(multiply("one", "six")).to.equal(6);
+expect(multiply("one", "seven")).to.equal(7);
+expect(multiply("one", "eight")).to.equal(8);
+expect(multiply("one", "nine")).to.equal(9);
 
 
 
