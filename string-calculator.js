@@ -321,6 +321,17 @@ expect(multiply("one", "seven")).to.equal(7);
 expect(multiply("one", "eight")).to.equal(8);
 expect(multiply("one", "nine")).to.equal(9);
 
+expect(multiply("two", "zero")).to.equal(0);
+expect(multiply("two", "one")).to.equal(2);
+expect(multiply("two", "two")).to.equal(4);
+expect(multiply("two", "three")).to.equal(6);
+expect(multiply("two", "four")).to.equal(8);
+expect(multiply("two", "five")).to.equal(10);
+expect(multiply("two", "six")).to.equal(12);
+expect(multiply("two", "seven")).to.equal(14);
+expect(multiply("two", "eight")).to.equal(16);
+expect(multiply("two", "nine")).to.equal(18);
 
 
-console.log(multiply("zero", "zero"));
+
+console.log(multiply("two", "nine"));
