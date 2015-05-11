@@ -290,7 +290,6 @@ expect(minus("nine", "seven")).to.equal(2);
 expect(minus("nine", "eight")).to.equal(1);
 expect(minus("nine", "nine")).to.equal(0)
 
-<<<<<<< HEAD
 console.log(minus("zero", "nine"));
 console.log(minus("one", "one"));
 console.log(minus("two","nine" ))
