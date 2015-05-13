@@ -3,9 +3,10 @@
 // debugger;
 
 document.head.parentElement.className = "js"; // It's alive!
-
-var elements = document.querySelectorAll('h3');
-
+// the only style applied there is the mickey mouse hand, is a trigger that
+//we always want to click in to give us the accordion
+var elements = document.querySelectorAll('.cbp-nttrigger');
+//
 // elements[0].addEventListener('click', function(){
 //     elements[0].parentElement.classList.toggle('cbp-ntopen');
 // });
@@ -26,8 +27,9 @@ var elements = document.querySelectorAll('h3');
 
 _.forEach(elements, function(element, index, elements){
     element.addEventListener('click', function(){
-        console.log(elements, index, element);
+      //  console.log(elements, index, element);
         element.parentElement.classList.toggle('cbp-ntopen');
+				// this above is the callback
     });
 });
 
