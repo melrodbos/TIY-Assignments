@@ -1,3 +1,19 @@
+//Reference from lecture on NestingAccordeon:
+// document.head.parentElement.className = "js";
+//
+// var elements = document.querySelectorAll('.cbp-nttrigger');
+//
+// _.forEach(elements, function(element, index, elements){
+//     element.addEventListener('click', function(){
+//       //  console.log(elements, index, element);
+//         element.parentElement.classList.toggle('cbp-ntopen');
+// 				// this above is the callback
+//    });
+// });
+
+
+
+
 /**
  * cbpFWTabs.js v1.0.0
  * http://www.codrops.com
