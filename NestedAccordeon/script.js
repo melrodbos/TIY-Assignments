@@ -1,3 +1,38 @@
+// Just a tracer...
+// alert("It's alive!");
+// debugger;
+
+document.head.parentElement.className = "js"; // It's alive!
+// the only style applied there is the mickey mouse hand, is a trigger that
+//we always want to click in to give us the accordion
+var elements = document.querySelectorAll('.cbp-nttrigger');
+//
+// elements[0].addEventListener('click', function(){
+//     elements[0].parentElement.classList.toggle('cbp-ntopen');
+// });
+//
+// elements[1].addEventListener('click', function(){
+//     elements[1].parentElement.classList.toggle('cbp-ntopen');
+// });
+
+// WHY JAVASCRIPT WHY!?!?
+// for ( var index = 0; index < elements.length; index++ ){
+//     var element = elements[index]
+//     element.addEventListener('click', function(){
+//         console.log(elements, index, element);
+//         element.parentElement.classList.toggle('cbp-ntopen');
+//     });
+// }
+// console.log(index);
+
+_.forEach(elements, function(element, index, elements){
+    element.addEventListener('click', function(){
+      //  console.log(elements, index, element);
+        element.parentElement.classList.toggle('cbp-ntopen');
+				// this above is the callback
+    });
+});
+
 /**
  * jquery.cbpNTAccordion.js v1.0.0
  * http://www.codrops.com
