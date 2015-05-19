@@ -1,0 +1,20 @@
+{
+  "name": "NestedAccordeon",
+  "version": "0.0.0",
+  "homepage": "https://github.com/melrodbos/TIY-Assignments",
+  "authors": [
+    "Melissa Rodríguez <m.rodriguez.bosques@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "CC0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "~3.8.0"
+  }
+}
