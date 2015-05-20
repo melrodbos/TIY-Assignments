@@ -5,12 +5,18 @@ body {
 		color: lightgrey;
 }
 
-h3, h4 {
+/*h3, h4 {
 		color: cornflowerblue;
 
 		font-size: 25pt;
 		border-bottom: 1px solid lightgrey;
 		marging-bottom: 2px;
+}*/
+
+h3 {
+	color: cornflowerblue;
+	font-size: 40pt;
+	border-bottom: 1px solid lightgray;
 }
 
 h4 {
