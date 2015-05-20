@@ -21,7 +21,7 @@ Found useful unit converter: http://pxtoem.com/*/
 body {
 		color: #888;
 		font-family: 'Lato', sans-serif;
-		font-size:
+		font-size:20px
 		font-weight: 300;
 		line-height: 1.5;
 }
@@ -35,7 +35,18 @@ h3, h4 {
 h3 {
 	font-size: 44px;
 	font-weight: 300;
+
 }
+
+/*from class (Wednesday)*/
+h4.cbp-ntopen.cbp-nttrigger::before {
+	content: "√";
+
+}
+
+
+
+
 
 h4 {
 	font-size: 19px;
@@ -70,7 +81,7 @@ from line 66-75 to experiment and test what her property/value aproach was. Dele
 replaced with similar properties to obtain similar? results*/
 .cbp-ntaccordion > li > .cbp-nttrigger:before,
 .cbp-ntsubaccordion > li > .cbp-nttrigger:before {
-	font-family: 'icomoon';
+	/*font-family: 'icomoon'; THIS FONT SHE USES FOR ARROWS!S
 	font-weight: normal;
 	/*font-variant: normal; HERE the property font-variant allows you to change the targeted text to small
 	caps (https://css-tricks.com/almanac/properties/f/font-variant/)*/
@@ -83,16 +94,16 @@ replaced with similar properties to obtain similar? results*/
 
 /*the ">" operator serves as a guide for child-parent relationship. ".cbp-nttrigger:before" is contained in the <li>
 that is contained in the ".cbp-ntaccordion" */
-/*.cbp-ntaccordion > li > .cbp-nttrigger:before {
+.cbp-ntaccordion > li > .cbp-nttrigger:before {
 	font-size: 75%;
 }
 
-How she created the arrows: ico-fonts- icomooned the bleep out of those bullets!!
-/*the "\36" */
-/*.cbp-ntaccordion > li > .cbp-nttrigger:before {
-	content: "\36";
+/*How she created the arrows: ico-fonts- icomooned the bleep out of those bullets!!
+the "\36" */
+.cbp-ntaccordion > li > .cbp-nttrigger:before {
+	content: "Boom!";
 }
-.cbp-ntaccordion > li > .cbp-nttrigger:hover:before {
+/*.cbp-ntaccordion > li > .cbp-nttrigger:hover:before {
 	content: "\35";
 	color: inherit;
 }
@@ -109,21 +120,34 @@ How she created the arrows: ico-fonts- icomooned the bleep out of those bullets!
 	content: "\33";
 	color: inherit;
 }
+*/
 .cbp-ntsubaccordion > li.cbp-ntopen > .cbp-nttrigger:before,
 .no-js .cbp-ntsubaccordion > li > .cbp-nttrigger:before {
-	content: "\31";
+	content: "HEY!";
 	color: inherit;
-}*/
+}
 
 h3.cbp-nttrigger{
 	cursor: pointer;
+
 }
 
 .js .cbp-ntcontent {
-	display: none;
+	display: block;
+	
 }
 
 
 .cbp-ntopen > .cbp-ntcontent {
 	display: block;
+}
+
+
+
+ul{
+	list-style-type: none
+}
+
+.h3.cbp-nttrigger::before {
+	content: "√"
 }
