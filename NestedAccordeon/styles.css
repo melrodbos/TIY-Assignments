@@ -28,7 +28,8 @@ body {
 
 h3, h4 {
 		color: #47A3DA;
-		margin: 20px 0px 20px 0px; /* Add a margin top & bottom to the headers*/
+		margin: 20px 0px 20px 0px; /* Add a margin top & bottom to the headers, always clockwise
+		starting at the top, right, bottom and left*/
 }
 
 h3 {
@@ -80,10 +81,12 @@ replaced with similar properties to obtain similar? results*/
 	/*WHAT IS THIS??? -webkit-font-smoothing: antialiased;*/
 }
 
+/*the ">" operator serves as a guide for child-parent relationship. ".cbp-nttrigger:before" is contained in the <li>
+that is contained in the ".cbp-ntaccordion" */
 .cbp-ntaccordion > li > .cbp-nttrigger:before {
 	font-size: 75%;
 }
-
+/*the "\36" */
 .cbp-ntaccordion > li > .cbp-nttrigger:before {
 	content: "\36";
 }
