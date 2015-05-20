@@ -11,8 +11,10 @@
 // });
 
 //jQuery:
-$('.cbp-nttrigger').on('click', function(event){
-    $(event.target).parent().toggleClass('cbp-ntopen');
+// my trigger event is the heading 3 (h3) with a class of cbp-nttrigger!!!!
+$('.cbp-nttrigger').on('click', function(){
+    //$(event.target).parent().toggleClass('cbp-ntopen');
+    $('.cbp-ntcontent').toggle();
 });
 
 
