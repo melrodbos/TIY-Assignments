@@ -1,35 +1,53 @@
+/* ---------- Global Styles */
+
+/* Imports -- Added from google.com/fonts*/
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 
 /*The body, h3, h4, h5 are called elements*/
 /*the curly brackets are called selectors*/
 
 body {
 		color: lightgrey;
+		font-family: 'Lato', sans-serif;
 }
 
 h3, h4 {
 		color: cornflowerblue;
-		font-size: 25pt;
-		marging-bottom: 2px;
+		margin: 20px 0px 20px 0px; /* Add a margin top & bottom to the headers*/
 }
 /* The border-bottom is located in the <li>*, not in the header*/
 
 h3 {
 	font-size: 40pt;
+	font-weight: 300;
 }
 
 h4 {
-
+	font-size: 25pt;
 }
 
 h5 {
 		color: darkgrey;
 }
 
-/* List Items */
+.main{
+	margin: 0 auto;
+	width: 100%;
+	padding: 0px 30px 0px 30px; /* Add a padding left & right for small screens,(responsive?)*/
+	max-width: 1104px;
+}
+
+/* List Items Styles*/
+ul{
+	padding: 0;
+}
+
 li{
-	text-decoration: none;
+	list-style: none;
 	border-bottom: 1px solid lightgray;
 }
+
+/*  --------------- Accordion Items Styles */
 
 .js .cbp-ntcontent {
 	display: none;
