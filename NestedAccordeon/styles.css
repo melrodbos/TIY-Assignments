@@ -9,27 +9,33 @@ body {
 h3, h4 {
 		color: cornflowerblue;
 		font-size: 25pt;
-		border-bottom: 1px solid lightgrey;
 		marging-bottom: 2px;
 }
+/* The border-bottom is located in the <li>*, not in the header*/
 
 h3 {
 	font-size: 40pt;
-	border-bottom: 1px solid lightgray;
 }
 
 h4 {
-	font-size:
-}
 
+}
 
 h5 {
 		color: darkgrey;
 }
 
+/* List Items */
+li{
+	text-decoration: none;
+	border-bottom: 1px solid lightgray;
+}
+
 .js .cbp-ntcontent {
 	display: none;
 }
+
+#this
 
 .cbp-ntopen > .cbp-ntcontent {
 	display: block;
