@@ -2,13 +2,28 @@
 
 /* Imports -- Added from google.com/fonts*/
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+/* Icons -- Arrows added from icomoon*/
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon_arrows/icomoon.eot');
+	src:url('fonts/icomoon_arrows/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon_arrows/icomoon.woff') format('woff'),
+		url('fonts/icomoon_arrows/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon_arrows/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
-/*The body, h3, h4, h5 are called elements*/
-/*the curly brackets are called selectors*/
-
+/*The body, h3, h4, h5 are called selectors*/
+/*the curly brackets contain the properties followed by values*/
+/*the original NestedAccordion file utilizes em as massurement units instead of pixels
+Found useful unit converter: http://pxtoem.com/*/
 body {
-		color: lightgrey;
+		color: #888;
 		font-family: 'Lato', sans-serif;
+		font-size:
+		font-weight: 300;
+		line-height: 1.5;
 }
 
 h3, h4 {
@@ -47,13 +62,58 @@ li{
 	border-bottom: 1px solid lightgray;
 }
 
-/*  --------------- Accordion Items Styles */
+/*  Accordion Arrow icons  */
+/*for the arrows: compared and used reference from the author's css source and */
+.cbp-ntaccordion > li > .cbp-nttrigger:before,
+.cbp-ntsubaccordion > li > .cbp-nttrigger:before {
+	font-family: 'icomoon';
+	font-weight: normal;
+	/*font-variant: normal;*/
+	text-transform: none;
+	line-height: 1;
+	color: #ddd;
+	margin-right: 0.5em;
+	-webkit-font-smoothing: antialiased;
+}
+
+.cbp-ntaccordion > li > .cbp-nttrigger:before {
+	font-size: 75%;
+}
+
+.cbp-ntaccordion > li > .cbp-nttrigger:before {
+	content: "\36";
+}
+.cbp-ntaccordion > li > .cbp-nttrigger:hover:before {
+	content: "\35";
+	color: inherit;
+}
+.cbp-ntaccordion > li.cbp-ntopen > .cbp-nttrigger:before,
+.no-js .cbp-ntaccordion > li > .cbp-nttrigger:before {
+	content: "\34";
+	color: inherit;
+}
+
+.cbp-ntsubaccordion > li > .cbp-nttrigger:before {
+	content: "\32";
+}
+.cbp-ntsubaccordion > li > .cbp-nttrigger:hover:before {
+	content: "\33";
+	color: inherit;
+}
+.cbp-ntsubaccordion > li.cbp-ntopen > .cbp-nttrigger:before,
+.no-js .cbp-ntsubaccordion > li > .cbp-nttrigger:before {
+	content: "\31";
+	color: inherit;
+}
+
+h3.cbp-nttrigger{
+	cursor: pointer;
+}
 
 .js .cbp-ntcontent {
 	display: none;
 }
 
-#this
 
 .cbp-ntopen > .cbp-ntcontent {
 	display: block;
