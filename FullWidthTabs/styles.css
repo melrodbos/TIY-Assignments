@@ -1,22 +1,35 @@
 body {
-  font-family: Arial, sans-serif;
-  color: cornflowerblue;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #47A3DA;
+	
+
 }
 
+/*property: -webkit-margin-start: Provides the width of the starting margin. If
+the writing direction is left-to-right, this value overrides margin-right.
+Syntax: -webkit-margin-start: <width>; ( it is a vendor specific prefix.
+It works only in webkit browsers like chrome and safari, for firefox the -moz
+property must be used).*/
 
-/*.content section[id^="section-"] {
+
+}
+
+.content section[id^="section-"] {
   display: none;
   padding-left: 1em;
   padding-right: 1em;
 }
+
 .content section[id^="section-"].content-current {
   display: block;
 }
+
 .content section[id^="section-"]::after {
   content: " ";
   display: table;
   clear: both;
 }
+/*left Panel*/
 .mediabox {
   width: 33%;
   float: left;
@@ -24,6 +37,7 @@ body {
   padding-left: 1em;
   padding-right: 1em;
 }
+
 .mediabox img {
   width: 100%;
 }
