@@ -4,15 +4,12 @@ body {
 	color: #47A3DA;
 }
 
-.tabs nav{
-	text-align: center;
-	border-bottom: 1px solid #47A3DA;
-	margin-bottom: 20px;
-}
+
 /*Tabs*/
 ul{
 	margin-bottom: 0;
 }
+
 ul li{
 	display: inline-block;
 	padding: 10px 15px 10px 15px;
@@ -20,36 +17,50 @@ ul li{
 	border-top: 1px solid #d2d2d2;
 	border-left: 1px solid #d2d2d2;
 	border-right: 1px solid #d2d2d2;
+	position: relative;
 }
 
 li a{
 	text-decoration: none;
 	color: #d2d2d2;
-
+	transition: all .2s ease;
 }
 
-.tab_active{
-	border-top: 3px solid #47A3DA;
-	border-left: 1px solid #47A3DA;
-	border-right: 1px solid #47A3DA;
-	/* border-bottom: 1px solid #ffffff; */
+li a:hover{
+	color: pink;
 }
 
-.tab_active a{
+.tabs nav{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.tabs nav li.tab_active:before,
+.tabs nav li.tab_active:after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  right: 100%;
+  bottom: 0;
+  width: 1000px;
+  background: #47a3da;
+}
+
+.tabs nav li.tab_active:after {
+	right: auto;
+	left: 100%;
+	width: 4000px;
+}
+
+li.tab_active{
+	border: 1px solid #47a3da;
+	box-shadow: inset 0 2px #47a3da;
+	border-bottom: none;
+	z-index: 100;
+}
+
+li.tab_active a{
 	color: #47A3DA;
-}
-
-
-
-
-
-/*property: -webkit-margin-start: Provides the width of the starting margin. If
-the writing direction is left-to-right, this value overrides margin-right.
-Syntax: -webkit-margin-start: <width>; ( it is a vendor specific prefix.
-It works only in webkit browsers like chrome and safari, for firefox the -moz
-property must be used).*/
-
-
 }
 
 .content section[id^="section-"] {
