@@ -1,9 +1,21 @@
 body {
   font-family: 'Lato', Calibri, Arial, sans-serif;
-  color: #47A3DA;
-	
+  font-size: 100%;
+	color: #47A3DA;
+}
+
+nav{
 
 }
+/*Tabs*/
+ul li{
+	display: inline-block;
+}
+
+
+
+
+
 
 /*property: -webkit-margin-start: Provides the width of the starting margin. If
 the writing direction is left-to-right, this value overrides margin-right.
