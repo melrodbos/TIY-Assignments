@@ -6,11 +6,19 @@ body {
 
 
 /*Tabs*/
-ul{
+
+.tabs {
+	position: relative;
+	width: 100%auto;
+	overflow: hidden;
+	margin: 16px 0 32px 0;
+	font-weight: 300;
+}
+.tabs ul{
 	margin-bottom: 0;
 }
 
-ul li{
+.tabs ul li{
 	display: inline-block;
 	padding: 10px 15px 10px 15px;
 	margin: 0px 3px 0px 3px;
@@ -20,16 +28,16 @@ ul li{
 	position: relative;
 }
 /* anchor tag styling for mouseover event*/
-li a{
+.tabs li a{
 	text-decoration: none;
 	color: #d2d2d2;
 	transition: all .2s ease;
 }
 
-li a:hover{
+.tabs li a:hover{
 	color: pink;
 }
-/* Tabs class */
+/* Tabs class navigation */
 .tabs nav{
 	text-align: center;
 	margin-bottom: 20px;
@@ -63,6 +71,16 @@ li.tab_active a{
 	color: #47A3DA;
 }
 
+.content section:before,
+.content section:after {
+	content: '';
+	display: table;
+}
+
+.content section:after {
+	clear: both;
+}
+
 .content section[id^="section-"] {
   display: none;
   padding-left: 1em;
@@ -78,7 +96,7 @@ li.tab_active a{
   display: table;
   clear: both;
 }
-/*left Panel*/
+/*Panels*/
 .mediabox {
   width: 33%;
   float: left;
@@ -93,14 +111,34 @@ li.tab_active a{
 
 /* Media queries: to assign style to different device screens */
 /* iPad Landscape */
-@media only screen and (max-width: 1024px) and (min-width: 768px){
+@media only screen and (max-width: 840px) and (min-width: 471px){
   body {
     background: blue;
+		width: 40%;
+		float: left;
+	  box-sizing: border-box;
+	  padding-left: 1em;
+	  padding-right: 1em;
   }
 }
+
 /* iPad Portrait */
 @media only screen and (max-width: 768px) and (min-width: 480px){
   body {
     background: green;
+  }
+}
+
+/* iphone 5 landscape */
+@media only screen and (max-width: 568px) and (min-width: 320px){
+  body {
+    background: pink;
+  }
+}
+
+/*iphone 5 portrait*/
+@media only screen and (max-width: 568px) and (min-width: 320px){
+  body {
+    background: orange;
   }
 }
