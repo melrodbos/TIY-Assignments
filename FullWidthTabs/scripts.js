@@ -1,5 +1,5 @@
 (function(window){
-  var BASE_URL = 'http://lorempixel.com/400/200/abstract';
+  var BASE_URL = 'http://lorempixel.com/400/200/food';
 
   function rando(limit){
     return Math.floor(Math.random() * limit);
