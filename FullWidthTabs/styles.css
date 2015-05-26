@@ -1,50 +1,57 @@
 body {
   font-family: 'Lato', Calibri, Arial, sans-serif;
   font-size: 100%;
-	color: #47A3DA;
+  color: #47A3DA;
 }
-
-
 /*Tabs*/
 
 .tabs {
-	position: relative;
-	width: 100%auto;
-	overflow: hidden;
-	margin: 16px 0 32px 0;
-	font-weight: 300;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 1em 0 2em 0;
+  font-weight: 300;
 }
-.tabs ul{
-	margin-bottom: 0;
+.tabs ul {
+  margin-bottom: 0;
 }
-
-.tabs ul li{
-	display: inline-block;
-	padding: 10px 15px 10px 15px;
-	margin: 0px 3px 0px 3px;
-	border-top: 1px solid #d2d2d2;
-	border-left: 1px solid #d2d2d2;
-	border-right: 1px solid #d2d2d2;
-	position: relative;
+.tabs ul li {
+  display: inline-block;
+  padding: 10px 15px 10px 15px;
+  margin: 0px 1px 0px 1px;
+  border: 1px solid #d2d2d2;
+  border-bottom: none;
+  position: relative;
 }
 /* anchor tag styling for mouseover event*/
-.tabs li a{
-	text-decoration: none;
-	color: #d2d2d2;
-	transition: all .2s ease;
+
+.tabs ul li a {
+  text-decoration: none;
+  color: #d2d2d2;
+  transition: all .2s ease;
+}
+.tabs ul li a:hover {
+  color: #47A3DA;
 }
 
-.tabs li a:hover{
-	color: #47A3DA;
+.tabs ul li.tab_active {
+  border: 1px solid #47a3da;
+  box-shadow: inset 0 2px #47a3da;
+  border-bottom: none;
+  z-index: 100;
+}
+.tabs ul li.tab_active a {
+  color: #47A3DA;
 }
 /* Tabs class navigation */
-.tabs nav{
-	text-align: center;
-	margin-bottom: 20px;
+
+.tabs nav {
+  text-align: center;
+  margin-bottom: 50px;
 }
 /* Added tab_active class */
-.tabs nav li.tab_active:before,
-.tabs nav li.tab_active:after {
+
+.tabs nav li.tab_active:before, .tabs nav li.tab_active:after {
   content: '';
   position: absolute;
   height: 1px;
@@ -54,49 +61,36 @@ body {
   background: #47a3da;
 }
 /* specific styling for the ":after(pseudo-element)" to create the bottom blue border */
+
 .tabs nav li.tab_active:after {
-	right: auto;
-	left: 100%;
-	width: 4000px;
+  right: auto;
+  left: 100%;
+  width: 4000px;
 }
 /* Position element (active tab) on top of the inactive tabs */
-li.tab_active{
-	border: 1px solid #47a3da;
-	box-shadow: inset 0 2px #47a3da;
-	border-bottom: none;
-	z-index: 100;
-}
 
-li.tab_active a{
-	color: #47A3DA;
+.content section:before, .content section:after {
+  content: '';
+  display: table;
 }
-
-.content section:before,
 .content section:after {
-	content: '';
-	display: table;
+  clear: both;
 }
-
-.content section:after {
-	clear: both;
-}
-
 .content section[id^="section-"] {
   display: none;
   padding-left: 1em;
   padding-right: 1em;
 }
-
 .content section[id^="section-"].content-current {
   display: block;
 }
-
 .content section[id^="section-"]::after {
   content: " ";
   display: table;
   clear: both;
 }
 /*Panels*/
+
 .mediabox {
   width: 33%;
   float: left;
@@ -104,40 +98,39 @@ li.tab_active a{
   padding-left: 1em;
   padding-right: 1em;
 }
-
 .mediabox img {
   width: 100%;
 }
-
 /* Media queries: to assign style to different device screens */
 /* iPad Landscape */
-@media only screen and (max-width: 840px) and (min-width: 471px){
+
+@media only screen and (max-width: 840px) and (min-width: 471px) {
   body {
     background: blue;
-		width: 40%;
-		float: left;
-	  box-sizing: border-box;
-	  padding-left: 1em;
-	  padding-right: 1em;
+    width: 40%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
-
 /* iPad Portrait */
-@media only screen and (max-width: 768px) and (min-width: 480px){
+
+@media only screen and (max-width: 768px) and (min-width: 480px) {
   body {
     background: green;
   }
 }
-
 /* iphone 5 landscape */
-@media only screen and (max-width: 568px) and (min-width: 320px){
+
+@media only screen and (max-width: 568px) and (min-width: 320px) {
   body {
     background: pink;
   }
 }
-
 /*iphone 5 portrait*/
-@media only screen and (max-width: 568px) and (min-width: 320px){
+
+@media only screen and (max-width: 568px) and (min-width: 320px) {
   body {
     background: orange;
   }
