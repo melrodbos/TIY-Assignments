@@ -1,86 +1,59 @@
-//Reference from lecture on NestingAccordeon:
-// document.head.parentElement.className = "js";
-//
-// var elements = document.querySelectorAll('.cbp-nttrigger');
-//
-// _.forEach(elements, function(element, index, elements){
-//     element.addEventListener('click', function(){
-//         element.parentElement.classList.toggle('cbp-ntopen');
-//    });
-// });
+(function(window) {
+  var BASE_URL = 'http://lorempixel.com/400/200/food';
+
+  function rando(limit) {
+    return Math.floor(Math.random() * limit);
+  }
+
+  function randoImage() {
+    return BASE_URL + '?' + rando(1000);
+  }
+
+  $('img').attr('src', randoImage);
+})(window);
 
 
+$(document).ready(function() {
+  $('.tabs ul').each(function() {
+    // For each set of tabs, we want to keep track of
+    // which tab is active and it's associated content
+    var $active, $content, $links = $(this).find('a');
 
+    // If the location.hash matches one of the links, use that as the active tab.
+    // If no match is found, use the first link as the initial active tab.
+    /*.hash is a property that can be found on elements that contain an href attribute/property.
+	    the property consists of the #* portion of the url. For example, for the
+	    url: http://www.thisurl.com/index.html#foo the hash is #foo*/
 
-/**
- * cbpFWTabs.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Copyright 2014, Codrops
- * http://www.codrops.com
- */
-;( function( window ) {
+    $active = $($links.filter('[href="' + location.hash + '"]')[0] || $links[0]);
+    $content = $($active[0].hash);
 
-	'use strict';
+    // Hides the remaining content
+    $links.not($active).each(function() {
+      $(this.hash).hide();
+    });
+    // Binds the tabs navigation event handler
+    $('.tabs li').on('click', function(e) {
+      e.preventDefault();
+      $('li').removeClass('tab_active');
+      $(this).addClass('tab_active');
+    });
+    // Binds the click event handler
+    $(this).on('click', 'a', function(e) {
+      // Make the old tab inactive.
 
-	function extend( a, b ) {
-		for( var key in b ) {
-			if( b.hasOwnProperty( key ) ) {
-				a[key] = b[key];
-			}
-		}
-		return a;
-	}
+      $content.hide();
 
-	function CBPFWTabs( el, options ) {
-		this.el = el;
-		this.options = extend( {}, this.options );
-  		extend( this.options, options );
-  		this._init();
-	}
+      // Update the variables with the new link and content
+      $active = $(this);
+      $content = $(this.hash);
 
-	CBPFWTabs.prototype.options = {
-		start : 0
-	};
+      // Makes the tab active.
+      // $active.addClass('tab_active');
+      $content.show();
 
-	CBPFWTabs.prototype._init = function() {
-		// tabs elemes
-		this.tabs = [].slice.call( this.el.querySelectorAll( 'nav > ul > li' ) );
-		// content items
-		this.items = [].slice.call( this.el.querySelectorAll( '.content > section' ) );
-		// current index
-		this.current = -1;
-		// show current content item
-		this._show();
-		// init events
-		this._initEvents();
-	};
-
-	CBPFWTabs.prototype._initEvents = function() {
-		var self = this;
-		this.tabs.forEach( function( tab, idx ) {
-			tab.addEventListener( 'click', function( ev ) {
-				ev.preventDefault();
-				self._show( idx );
-			} );
-		} );
-	};
-
-	CBPFWTabs.prototype._show = function( idx ) {
-		if( this.current >= 0 ) {
-			this.tabs[ this.current ].className = '';
-			this.items[ this.current ].className = '';
-		}
-		// change current
-		this.current = idx != undefined ? idx : this.options.start >= 0 && this.options.start < this.items.length ? this.options.start : 0;
-		this.tabs[ this.current ].className = 'tab-current';
-		this.items[ this.current ].className = 'content-current';
-	};
-
-	// add to global namespace
-	window.CBPFWTabs = CBPFWTabs;
-
-})( window );
+      // Prevents the anchor's default click action. In other words: it will prevent the page to reload if there is nothing assign to the href.
+      e.preventDefault();
+    });
+  });
+});
