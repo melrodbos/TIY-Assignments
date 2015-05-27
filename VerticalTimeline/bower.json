@@ -1,0 +1,19 @@
+{
+  "name": "VerticalTimeline",
+  "version": "0.0.0",
+  "homepage": "https://github.com/melrodbos/TIY-Assignments",
+  "authors": [
+    "Melissa Rodríguez <m.rodriguez.bosques@gmail.com>"
+  ],
+  "license": "CC0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "~3.9.3"
+  }
+}
