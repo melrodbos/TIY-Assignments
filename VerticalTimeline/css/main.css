@@ -101,10 +101,20 @@ textarea {
 
 /* we are building a grid and anything that sits inside of our grid should have the display: inline-block property */
 
-h3 {
-  border bottom: 1px solid white;
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: pink;
 }
 
+h3 {
+  border-bottom: 1px solid white;
+}
+/* codepen reference: http://codepen.io/anon/pen/XbNvvm */
+.container > header {
+  width: 90%;
+
+
+}
 
 .timeline {
   margin: 0; padding: 0;
@@ -120,8 +130,8 @@ h3 {
 .timeline li::before {
   content: '\2708';
   position: absolute;
-  left: 50%;
-  font-size: 90%;
+  left: 30%;
+  font-size: 200%;
 
 }
 
@@ -130,10 +140,9 @@ h3 {
   display: table;
   clear: both;
 }
-
-.timeline time > * {
-  display: block;
-
+/* alternating background color */
+.timeline li:nth-child(odd) article {
+  background-color: #0393CE;
 }
 
 .timeline time {
@@ -141,22 +150,23 @@ h3 {
   float: left; width: 14%;
   margin-right: 24%;
   text-align: right;
-  
-
 }
+
+.timeline time > * {
+  display: block;
+}
+
 .timeline article {
   display: inline-block;
-  width: 62%; margin-left: auto;
+  width: 62%; float: left;
   box-sizing: border-box;
   color: white;
   background-color: #7ABFEB;
   padding: 2ex 2em;
   border-radius: 15px;
+
 }
-/* alternating background color */
-.timeline li:nth-child(odd) article {
-  background-color: #0393CE;
-}
+
 
 
 
