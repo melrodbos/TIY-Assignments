@@ -100,7 +100,7 @@ textarea {
 /* Totally not working */
 body {
   font-family: 'Lato', Calibri, Arial, sans-serif;
-  color: pink;
+  color: grey;
 }
 
 h3 {
@@ -117,7 +117,17 @@ h3 {
 .timeline {
   margin: 0; padding: 0;
   list-style: none;
+}
 
+.timeline:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: orange;
+  left: 34.2%;
+  margin-left: -10px;
 }
 
 .timeline li {
@@ -134,7 +144,7 @@ h3 {
   line-height: 2.5ex; width: 2.5ex;
   border: 0.5em solid orange;
   border-radius: 50%;
-  background-color: green;
+  background-color: #7ABFEB;
 }
 
 .timeline li::after {
@@ -150,7 +160,7 @@ h3 {
 .timeline li article::before{
   content: '\25c0';
   position: absolute;
-  border-color: pink;
+  border-color: white;
   display: block;
 
 }
@@ -189,19 +199,6 @@ h3 {
 } */
 
 
-/* promote  */
-.verticalline time::after {
-  content: " ";
-  position: absolute;
-  left: 30%;
-  width: 1ex;
-  background-color: red;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-  margin-left: 3.0ex;
-
-}
 
 
 
