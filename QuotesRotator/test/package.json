@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"start:"browser-sync start --server --files= --files='index.html, js/** /* .js, css/** /* .css/'"\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melrodbos/TIY-Assignments.git"
+  },
+  "author": "Melissa Rodriguez <m.rodriguez.bosques@gmail.com>",
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/melrodbos/TIY-Assignments/issues"
+  },
+  "homepage": "https://github.com/melrodbos/TIY-Assignments#readme"
+}
