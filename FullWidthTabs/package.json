@@ -1,0 +1,21 @@
+{
+  "name": "fullwidhttabs",
+  "version": "0.0.0",
+  "description": "Blueprint: Responsive Full Width Tabs =========",
+  "main": "index.js",
+  "scripts": {
+    "test": "browser-sync start --server --files='/test/**/*.js, /js/**/*.css' --startPath test/index.html",
+    "start": "browser-sync start --server --directory --files='css/**/*.css, js/**/*.js, index.html'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"https://github.com/melrodbos/TIY-Assignments\""
+  },
+  "author": "Melissa Rodriguez <m.rodriguez.bosques@gmail.com>",
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/melrodbos/TIY-Assignments/issues"
+  },
+  "homepage": "https://github.com/melrodbos/TIY-Assignments"
+}
+}
